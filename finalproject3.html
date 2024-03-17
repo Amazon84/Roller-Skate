@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Roller Skating</title>
+    <style>
+      body {
+        background-color: blueviolet;
+      }
+
+      p {
+        padding: 10px 10px;
+        color: white;
+        text-align: center;
+      }
+
+      h1 {
+        color: whitesmoke;
+        text-align: center;
+        line-height: 75px;
+        border: 2px solid red;
+        padding-inline-start: auto 0;
+        color: white;
+        box-shadow: rgba(173, 15, 134, 0.08) 0px 8px 8px 0;
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+      h2 {
+        text-align: center;
+        color: white;
+      }
+      button {
+        display: block;
+        margin: 5px auto;
+        border: 1px solid #1a64d6;
+        background: #1a64d6;
+        color: #fff;
+        font-size: 12px;
+        line-height: 20px;
+        padding: 16px 24px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+      img {
+        display: auto 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Westlake Rhythym Wednesday !
+      <hr />
+      Join us from 6:30-8:30 EVERY Wednesday
+    </h1>
+    <h2>
+      <img
+        src="https://tse4.mm.bing.net/th?id=OIP.JtzRWQfO9L8cqDx_NW0i7QHaFA&pid=Api&P=0&h=220"
+        alt="VeniceSkaters"
+        class="center"
+      />
+    </h2>
+
+    <button>
+      CLICK TO FIND <br />
+      GROUPS NEAR YOU
+    </button>
+
+    <p>This Page was built by Andrea Stephens</p>
+
+    <script>
+      function whichRink() {
+        let city = prompt("Which city do you live in?");
+
+        let style = prompt(" Rhythym or Jam ");
+        {
+          if (city === " Dallas " + " Garland " + " dallas " + "garland");
+          if (style === "Rhythym") alert(" Join us at Westlake ");
+          if (style !== "Rhythym") alert(" Join us at RollerWorld ");
+        }
+      }
+      let changeButton = document.querySelector("button");
+      changeButton.addEventListener("click", whichRink);
+    </script>
+  </body>
+</html>
